@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operating System</title>
+    <link rel="icon" type="image/x-icon" href="https://tse3.mm.bing.net/th?id=OIP.sDZF4IhUT_zIvUKAK0N5iAHaH-&pid=Api&P=0">
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        h3{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px;}
+            
+        img{
+            border-radius: 22px;
+            height: 50px;
+            width: 50px;
+            display: block;
+            margin: auto;}
+
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        *{
+                box-sizing: border-box;
+            }
+            .top{
+                margin: auto;
+                width: 1253px;
+                padding: auto;
+                
+            }
+            .ul{
+                font-size: large;
+            }
+
+            
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <header class="top">
+        <img src="https://static.vecteezy.com/system/resources/previews/000/380/945/original/edit-profile-vector-icon.jpg" alt="propic">
+        <h3>WELCOME TO MY WEBSITE</h3>
+        <div class="container">
+        </header>
+
+     <br><h1>Difference between process, program and thread? Different types</h1>   
+     <ul class="ul">
+        <li>A program consists of instructions in any programming language.</li>
+        <li>A process consists of instructions in machine code. A program in execution is called a process.</li>
+        <li>Thread is the basic unit of execution or CPU utilization. </li>
+      </ul>
+     
+     <br>
+     <h1>SCOPE</h1>
+     <p class="ul">This article discusses programs, processes, and threads. It also explains different types of processes.</p>
+
+     <br>
+     <h2>DEFINITION</h2>
+     <p class="ul">A program is a passive entity, which is a file containing a list of instructions stored on a disk (often called an executable file). A process on the other hand is an active entity with a program counter specifying the next instruction to be executed and a set of associated resources. A program becomes a process when an executable file is loaded into memory.</p>
+
+     <br>
+     <h1>Difference between program and process</h1>
+     <table border="4" class="ul">
+        <tr>
+            <th>PROGRAM</th>
+            <th>PROCESS</th>
+        </tr> 
+        <tr>
+            <td>It consists of instructions in any programming language. </td>
+            <td>It consists of instructions in machine code.</td>
+        </tr>   
+        <tr>
+            <td>It resides in the secondary storage device</td>
+            <td>It resides in the main memory</td>
+        </tr> 
+        <tr>
+            <td>The program only needs memory for storage</td>
+            <td>The resource requirement is quite high in the case of process</td>
+        </tr>  
+        <tr>
+            <td>Its life span is unlimited </td>
+            <td>Its life span is limited </td>
+        </tr> 
+        <tr>
+            <td>It is a passive entity. </td>
+            <td>It is an active entity.</td>
+        </tr>
+     </table>
+     <p class="ul">
+        A process includes a stack, data section, and heap. Stack contains temporary data such as function parameters, return address, and local variables. The data section contains global variables. Heap is a memory that is dynamically allocated during process runtime.<br>A thread is a basic unit of CPU utilization. It comprises a shared ID, a program counter, a register set, and a stack. It shares code section, data section, and other operating system resources such as open files and signals.
+     </p><br>
+     <h1>Difference between program and process</h1>
+     <table border="4" class="ul">
+        <tr>
+            <th>THREAD</th>
+            <th>PROCESS</th>
+        </tr> 
+        <tr>
+            <td>Threads are easier to create and terminate  </td>
+            <td>Processes are not easy to create and terminate.</td>
+        </tr>   
+        <tr>
+            <td>Multiple threads when they are in the same process share the same address </td>
+            <td>Processes do not share the same address </td>
+        </tr> 
+        <tr>
+            <td>It is easy to communicate between the threads </td>
+            <td>To communicate between processes we need operating system intervention.</td>
+        </tr>  
+        <tr>
+            <td>It takes less time in context switching. </td>
+            <td>It takes more time to context switch.</td>
+        </tr> 
+        
+     </table>
+     <br>
+     <h1>Types of processes: </h1>
+     <p class="ul">
+        There are basically two types of event-specific processes<br>
+        <ul class="ul">
+            <li>I/O bound process: If a program/process spends more of its time doing I/O than it spends doing computations then it is called I/O bound process.</li>
+            <li>CPU bound process: If a program/process spends more of its time doing CPU operations (computations) and generates I/O requests infrequently then it is called CPU bound process..</li>
+            
+          </ul>
+        
+    </p>
+    <br>
+    <h1>Summary</h1>
+    <p class="ul">
+        
+        <ul class="ul">
+            <li>The program consists of a list of instructions that gets stored on a hard disk.</li>
+            <li>A thread is the smallest unit of execution managed by an operating system.</li>
+            <li>There are two types of processes: I/O bound process and CPU bound process.</li>
+
+            
+          </ul>
+
+
+     
+    
+</body>
+
+</html>
